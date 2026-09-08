@@ -1,9 +1,14 @@
-def BinaryToDecimal(b):
- d,p=0,0
- while b:
-     d+=(b%10)*(2**p)
-     b//=10
-     p+=1
- print(d)
-for num in[100,101]:
-    BinaryToDecimal(num)
+sum=0
+count=0
+while True:
+    num=int(input("Enter a number: "))
+    if num==-1:
+        break
+    sum+=num
+    count+=1
+if count>0:
+    avg=sum/count
+    print('avg=',count)
+    print('count=',count)
+else:
+    print('no numbers were entered')
